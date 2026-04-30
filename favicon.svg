@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cloud Landing">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#81a1ff"/>
+      <stop offset="1" stop-color="#66e3ff"/>
+    </linearGradient>
+    <filter id="s" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0b1020"/>
+  <path filter="url(#s)" fill="url(#g)" d="M23 47h23a12 12 0 0 0 0-24 17 17 0 0 0-33-2A10 10 0 0 0 23 47Z"/>
+  <path fill="rgba(255,255,255,.18)" d="M16 36c1-5 5-9 10-9 2 0 4 .5 6 1.6-5.3-.4-10.5 2.9-12 7.4-1.2 3.6.2 7.3 3.1 9.4C19.4 43.2 15.5 40 16 36Z"/>
+</svg>
+

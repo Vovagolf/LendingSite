@@ -43,6 +43,13 @@ body{
 a{color:inherit}
 img{max-width:100%;display:block}
 
+.icon{width: 16px; height: 16px; flex: 0 0 auto}
+.icon-lg{width: 20px; height: 20px}
+
+:where(a, button, summary, input, textarea){
+  transition: transform .15s ease, background-color .15s ease, border-color .15s ease, color .15s ease, box-shadow .15s ease, opacity .15s ease;
+}
+
 .container{max-width:var(--max); margin:0 auto; padding:0 20px}
 
 .skip-link{
@@ -92,6 +99,9 @@ img{max-width:100%;display:block}
 
 .nav{display:flex; gap: 14px; margin-left: auto}
 .nav-link{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
   text-decoration:none;
   color: var(--muted);
   font-weight: 600;
@@ -99,7 +109,12 @@ img{max-width:100%;display:block}
   padding: 10px 10px;
   border-radius: 12px;
 }
-.nav-link:hover{background: var(--panel); color: var(--text)}
+.nav-link:hover{
+  background: var(--panel);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+.nav-link:active{transform:none}
 
 .header-actions{display:flex; align-items:center; gap: 10px}
 
@@ -282,6 +297,11 @@ h1{font-size: clamp(34px, 4.5vw, 56px); line-height:1.06; margin: 12px 0}
   border: 1px solid var(--border);
   background: rgba(255,255,255,.04);
 }
+.card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(129,161,255,.32);
+  background: rgba(255,255,255,.055);
+}
 .card h3{margin: 0 0 8px}
 .card p{margin:0 0 12px; color: var(--muted)}
 
@@ -294,6 +314,11 @@ h1{font-size: clamp(34px, 4.5vw, 56px); line-height:1.06; margin: 12px 0}
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: rgba(255,255,255,.04);
+}
+.benefit:hover{
+  transform: translateY(-2px);
+  border-color: rgba(102,227,255,.30);
+  background: rgba(255,255,255,.055);
 }
 .benefit h3{margin:0 0 8px}
 .benefit p{margin:0; color: var(--muted)}
@@ -343,6 +368,10 @@ h1{font-size: clamp(34px, 4.5vw, 56px); line-height:1.06; margin: 12px 0}
   background: rgba(255,255,255,.04);
   position: relative;
 }
+.price-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(129,161,255,.32);
+}
 .price-card h3{margin:0}
 .tag{
   position:absolute; top: 14px; right: 14px;
@@ -376,6 +405,7 @@ h1{font-size: clamp(34px, 4.5vw, 56px); line-height:1.06; margin: 12px 0}
   cursor:pointer;
   font-weight: 800;
 }
+.faq summary:hover{color: var(--text)}
 .faq p{margin: 10px 0 0; color: var(--muted)}
 
 .contact-grid{
@@ -391,9 +421,34 @@ h1{font-size: clamp(34px, 4.5vw, 56px); line-height:1.06; margin: 12px 0}
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: rgba(255,255,255,.04);
+  display:flex;
+  align-items:center;
+  gap: 12px;
 }
+.contact-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(129,161,255,.32);
+  background: rgba(255,255,255,.055);
+}
+.contact-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display:grid;
+  place-items:center;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(129,161,255,.14), rgba(102,227,255,.06));
+  color: var(--text);
+}
+.contact-text{min-width: 0}
+.contact-v{display:block; font-weight: 900; white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+.contact-arrow{
+  margin-left: auto;
+  color: var(--muted);
+  opacity: .8;
+}
+.contact-card:hover .contact-arrow{opacity: 1; color: var(--text)}
 .contact-k{display:block; color: var(--muted); font-size: 12px; font-weight: 700}
-.contact-v{display:block; font-weight: 900}
 
 .form{
   padding: 18px;
