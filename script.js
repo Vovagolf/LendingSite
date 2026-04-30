@@ -11,7 +11,7 @@
   if (year) year.textContent = String(new Date().getFullYear());
 
   // Theme: default to system, persist user choice
-  const themeKey = "cloudLandingTheme";
+  const themeKey = "golf5LandingTheme";
   const applyTheme = (value) => {
     if (!value) {
       document.documentElement.removeAttribute("data-theme");
@@ -114,7 +114,7 @@
       const message = String(fd.get("message") || "").trim();
       const plan = String(fd.get("plan") || "").trim();
 
-      const subjectParts = ["Заявка: хмарні технології"];
+      const subjectParts = ["Заявка: Volkswagen Golf 5"];
       if (plan) subjectParts.push(`пакет ${plan}`);
       const subject = subjectParts.join(" — ");
 

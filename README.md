@@ -1,12 +1,13 @@
-# Cloud Landing (GitHub Pages)
+# Golf V Landing (GitHub Pages)
 
-Лендінг про **хмарні технології** (статичний сайт: HTML/CSS/JS), готовий до безкоштовного хостингу на **GitHub Pages**.
+Лендінг про **Volkswagen Golf 5 (Mk5)** (статичний сайт: HTML/CSS/JS), готовий до безкоштовного хостингу на **GitHub Pages**.
 
 ## Файли
 
-- `index.html` — сторінка
+- `index.html` — сторінка (комплектації, характеристики, фото)
 - `styles.css` — стилі
 - `script.js` — меню, тема, форма
+- `favicon.svg` — іконка вкладки
 
 ## Локальний запуск
 
