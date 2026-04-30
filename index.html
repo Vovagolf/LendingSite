@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Лендінг про хмарні технології: міграція в хмару, DevOps, Kubernetes, безпека, резервне копіювання та оптимізація витрат."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Хмарні технології — сучасний лендінг</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%2381a1ff' d='M23 47h23a12 12 0 0 0 0-24 17 17 0 0 0-33-2A10 10 0 0 0 23 47Z'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти до контенту</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="На початок">
+          <span class="brand-mark" aria-hidden="true">☁</span>
+          <span class="brand-text">Cloud Landing</span>
+        </a>
+
+        <nav class="nav" aria-label="Головна навігація" data-nav>
+          <a class="nav-link" href="#services">Послуги</a>
+          <a class="nav-link" href="#benefits">Переваги</a>
+          <a class="nav-link" href="#architecture">Архітектура</a>
+          <a class="nav-link" href="#pricing">Пакети</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#contact">Контакти</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Перемкнути тему">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span class="theme-toggle-text">Тема</span>
+          </button>
+          <a class="btn btn-primary" href="#contact">Отримати консультацію</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Відкрити меню" aria-expanded="false">
+            <span class="nav-toggle-bars" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="badge">Kubernetes • DevOps • Cloud Security</p>
+            <h1>Хмарні технології для бізнесу, що росте</h1>
+            <p class="lead">
+              Проєктуємо та розгортаємо надійну інфраструктуру в хмарі: від міграції й CI/CD до моніторингу, безпеки та
+              оптимізації витрат.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#pricing">Подивитись пакети</a>
+              <a class="btn btn-ghost" href="#services">Що ми робимо</a>
+            </div>
+
+            <dl class="hero-metrics" aria-label="Ключові метрики">
+              <div class="metric">
+                <dt>До релізу</dt>
+                <dd><span class="num">7–14</span> днів</dd>
+              </div>
+              <div class="metric">
+                <dt>Аптайм</dt>
+                <dd><span class="num">99.9%</span>+</dd>
+              </div>
+              <div class="metric">
+                <dt>Економія</dt>
+                <dd><span class="num">10–30%</span></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-card" aria-label="Візуальна картка">
+            <div class="glass">
+              <div class="glass-header">
+                <span class="dot dot-red" aria-hidden="true"></span>
+                <span class="dot dot-yellow" aria-hidden="true"></span>
+                <span class="dot dot-green" aria-hidden="true"></span>
+                <span class="glass-title">Дашборд інфраструктури</span>
+              </div>
+              <div class="glass-body">
+                <div class="stat">
+                  <span class="stat-k">Latency p95</span>
+                  <span class="stat-v">142ms</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-k">Deploys / day</span>
+                  <span class="stat-v">12</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-k">Incidents</span>
+                  <span class="stat-v">0</span>
+                </div>
+
+                <div class="spark" aria-hidden="true"></div>
+                <div class="chips" aria-hidden="true">
+                  <span class="chip">IaC</span>
+                  <span class="chip">Zero‑Trust</span>
+                  <span class="chip">Observability</span>
+                  <span class="chip">Auto‑scaling</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="hero-note">
+              Працюємо з AWS / Azure / GCP, або підбираємо оптимальний стек під ваші вимоги.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head">
+            <h2>Послуги</h2>
+            <p>Від аудиту до підтримки — закриваємо повний цикл роботи з хмарою.</p>
+          </div>
+
+          <div class="grid cards">
+            <article class="card">
+              <h3>Міграція в хмару</h3>
+              <p>Оцінка, план, поетапний перенос, мінімальні простої, контроль ризиків.</p>
+              <ul class="list">
+                <li>Архітектурний аудит</li>
+                <li>Landing zone</li>
+                <li>План міграції</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>DevOps та CI/CD</h3>
+              <p>Автоматизація збірок і релізів, стандартизація процесів, швидкі деплої.</p>
+              <ul class="list">
+                <li>GitHub Actions / GitLab CI</li>
+                <li>Контейнери</li>
+                <li>Секрети та політики</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Kubernetes</h3>
+              <p>Розгортання кластерів, ingress, autoscaling, безпека, оновлення без даунтайму.</p>
+              <ul class="list">
+                <li>Helm / Kustomize</li>
+                <li>HPA / VPA</li>
+                <li>Network Policies</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Моніторинг та SRE</h3>
+              <p>Метрики, логи, трасування, алерти та runbook‑и для стабільної роботи.</p>
+              <ul class="list">
+                <li>OpenTelemetry</li>
+                <li>Prometheus/Grafana</li>
+                <li>Інцидент‑менеджмент</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>FinOps</h3>
+              <p>Знаходимо «дорогі» місця й оптимізуємо ресурси без втрати якості.</p>
+              <ul class="list">
+                <li>Теги та бюджети</li>
+                <li>Reserved/Spot</li>
+                <li>Right‑sizing</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Безпека</h3>
+              <p>Моделювання загроз, IAM, ізоляція, шифрування, контроль доступів.</p>
+              <ul class="list">
+                <li>Zero‑Trust</li>
+                <li>WAF / DDoS</li>
+                <li>Сканування образів</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="benefits">
+        <div class="container">
+          <div class="section-head">
+            <h2>Переваги підходу</h2>
+            <p>Сфокусовано на результаті: швидкість, надійність, прозорість.</p>
+          </div>
+
+          <div class="grid benefits">
+            <div class="benefit">
+              <h3>Швидкі релізи</h3>
+              <p>Стабільний CI/CD і шаблони інфраструктури скорочують час від ідеї до продакшену.</p>
+            </div>
+            <div class="benefit">
+              <h3>Надійність</h3>
+              <p>Моніторинг, алертинг і SLO‑підхід знижують кількість інцидентів та час відновлення.</p>
+            </div>
+            <div class="benefit">
+              <h3>Безпека за замовчуванням</h3>
+              <p>Найменші привілеї, політики доступу, контроль секретів і захист периметра.</p>
+            </div>
+            <div class="benefit">
+              <h3>Контроль бюджету</h3>
+              <p>FinOps‑практики й прозорі звіти допомагають платити лише за потрібне.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="architecture">
+        <div class="container">
+          <div class="section-head">
+            <h2>Приклад архітектури</h2>
+            <p>Один із поширених шаблонів: масштабування під навантаження та чіткі межі безпеки.</p>
+          </div>
+
+          <div class="diagram" role="img" aria-label="Схема: користувачі → CDN/WAF → балансер → Kubernetes → бази/черги → спостережуваність">
+            <div class="diagram-row">
+              <div class="node">Користувачі</div>
+              <div class="arrow" aria-hidden="true">→</div>
+              <div class="node node-accent">CDN / WAF</div>
+              <div class="arrow" aria-hidden="true">→</div>
+              <div class="node">Load Balancer</div>
+            </div>
+            <div class="diagram-row">
+              <div class="node node-strong">Kubernetes</div>
+              <div class="node">API</div>
+              <div class="node">Workers</div>
+              <div class="node">Cron</div>
+            </div>
+            <div class="diagram-row">
+              <div class="node">DB</div>
+              <div class="node">Cache</div>
+              <div class="node">Queue</div>
+              <div class="node node-accent">Observability</div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <p>
+              Потрібна інша схема (serverless, multi‑cloud, hybrid)? Підлаштуємо рішення під ваш домен, SLA і комплаєнс.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="pricing">
+        <div class="container">
+          <div class="section-head">
+            <h2>Пакети</h2>
+            <p>Виберіть стартовий рівень — далі масштабуємо співпрацю під задачі.</p>
+          </div>
+
+          <div class="grid pricing">
+            <article class="price-card">
+              <h3>Start</h3>
+              <p class="price"><span class="price-num">$</span>1</p>
+              <p class="muted">Аудит та план міграції</p>
+              <ul class="list">
+                <li>Аудит інфраструктури</li>
+                <li>Рекомендації по безпеці</li>
+                <li>Roadmap на 30 днів</li>
+              </ul>
+              <a class="btn btn-ghost" href="#contact" data-plan="Start">Замовити</a>
+            </article>
+            <article class="price-card featured">
+              <p class="tag">Найпопулярніший</p>
+              <h3>Pro</h3>
+              <p class="price"><span class="price-num">$</span>1</p>
+              <p class="muted">Розгортання + CI/CD</p>
+              <ul class="list">
+                <li>Landing zone</li>
+                <li>CI/CD pipeline</li>
+                <li>Моніторинг та алерти</li>
+              </ul>
+              <a class="btn btn-primary" href="#contact" data-plan="Pro">Почати</a>
+            </article>
+            <article class="price-card">
+              <h3>Scale</h3>
+              <p class="price"><span class="price-num">$</span>1</p>
+              <p class="muted">Kubernetes + SRE</p>
+              <ul class="list">
+                <li>Кластер Kubernetes</li>
+                <li>Безпека та політики</li>
+                <li>SLO + on-call процес</li>
+              </ul>
+              <a class="btn btn-ghost" href="#contact" data-plan="Scale">Обговорити</a>
+            </article>
+          </div>
+
+          <p class="pricing-note muted">
+            Для навчального прикладу: вартість кожного пакету — <strong>$1</strong>.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <h2>FAQ</h2>
+            <p>Короткі відповіді на поширені питання.</p>
+          </div>
+
+          <div class="faq">
+            <details>
+              <summary>Скільки часу займає старт?</summary>
+              <p>Зазвичай 1–2 тижні для базового розгортання з CI/CD та моніторингом (залежить від поточного стану).</p>
+            </details>
+            <details>
+              <summary>З якими хмарами працюєте?</summary>
+              <p>AWS, Azure, GCP, а також hybrid‑сценарії. Обираємо платформу під вимоги та бюджет.</p>
+            </details>
+            <details>
+              <summary>Як забезпечуєте безпеку?</summary>
+              <p>Принцип найменших привілеїв, сегментація, шифрування, контроль секретів, сканування та політики.</p>
+            </details>
+            <details>
+              <summary>Чи можна розмістити цей сайт безкоштовно?</summary>
+              <p>Так — через GitHub Pages. Нижче я додав інструкцію в README та в цьому чаті поясню кроки.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-head left">
+              <h2>Зв’язатися</h2>
+              <p>
+                Звертатися до <strong>Бабійчука Володимира</strong>, група <strong>КН23</strong>.
+              </p>
+            </div>
+
+            <div class="contact-cards">
+              <a class="contact-card" href="mailto:hello@example.com">
+                <span class="contact-k">Email</span>
+                <span class="contact-v">hello@example.com</span>
+              </a>
+              <a class="contact-card" href="tel:+380000000000">
+                <span class="contact-k">Телефон</span>
+                <span class="contact-v">+38 (000) 000‑00‑00</span>
+              </a>
+              <a class="contact-card" href="https://t.me/" target="_blank" rel="noreferrer">
+                <span class="contact-k">Telegram</span>
+                <span class="contact-v">@your_handle</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="form" data-contact-form>
+            <label>
+              <span>Ім’я</span>
+              <input name="name" autocomplete="name" required placeholder="Ваше ім’я" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="name@company.com" />
+            </label>
+            <label>
+              <span>Проєкт</span>
+              <input name="project" placeholder="Міграція / Kubernetes / CI/CD..." />
+            </label>
+            <label>
+              <span>Повідомлення</span>
+              <textarea name="message" rows="4" placeholder="Коротко опишіть задачу" required></textarea>
+            </label>
+
+            <input type="hidden" name="plan" />
+
+            <button class="btn btn-primary" type="submit">Надіслати</button>
+            <p class="form-hint muted">
+              Форма відкриє ваш поштовий клієнт (без бекенду). За потреби підключимо справжню відправку через сервіс.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span data-year></span> Cloud Landing. Зроблено для GitHub Pages.</p>
+        <div class="footer-links">
+          <a class="muted" href="#top">Вгору</a>
+          <a class="muted" href="#privacy">Політика</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="privacy">
+      <div class="dialog-inner">
+        <form method="dialog">
+          <div class="dialog-head">
+            <h2>Політика конфіденційності (шаблон)</h2>
+            <button class="btn btn-ghost" value="close" aria-label="Закрити">Закрити</button>
+          </div>
+          <p class="muted">
+            Це демонстраційний текст. Додайте свою політику (зокрема про cookies, аналітику та обробку персональних даних).
+          </p>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
+
