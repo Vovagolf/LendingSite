@@ -1,10 +1,10 @@
-# Golf V Landing (GitHub Pages)
+# Portfolio Landing (GitHub Pages)
 
-Лендінг про **Volkswagen Golf 5 (Mk5)** (статичний сайт: HTML/CSS/JS), готовий до безкоштовного хостингу на **GitHub Pages**.
+Портфоліо **Бабійчук Володимир Миколайович** (статичний сайт: HTML/CSS/JS), готове до безкоштовного хостингу на **GitHub Pages**.
 
 ## Файли
 
-- `index.html` — сторінка (комплектації, характеристики, фото)
+- `index.html` — сторінка портфоліо
 - `styles.css` — стилі
 - `script.js` — меню, тема, форма
 - `favicon.svg` — іконка вкладки
@@ -34,7 +34,7 @@ npx http-server -p 5173
 ### 1) Створіть репозиторій на GitHub
 
 - GitHub → **New repository**
-- Назва, наприклад: `cloud-landing`
+- Назва, наприклад: `portfolio`
 - Public (або Private — Pages теж працює, але інколи з обмеженнями залежно від плану)
 
 ### 2) Завантажте файли в репозиторій
@@ -46,7 +46,7 @@ git init
 git add .
 git commit -m "Initial landing page"
 git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/cloud-landing.git
+git remote add origin https://github.com/<YOUR_USERNAME>/portfolio.git
 git push -u origin main
 ```
 
@@ -59,11 +59,11 @@ git push -u origin main
 - Save
 
 Через 1–3 хв з’явиться URL сайту виду:
-`https://<YOUR_USERNAME>.github.io/cloud-landing/`
+`https://<YOUR_USERNAME>.github.io/portfolio/`
 
 ## Налаштування контенту
 
-- Контакти змінюються в `index.html` (email/телефон/telegram).
-- Текст, послуги, ціни — у `index.html`.
+- Контакти змінюються в `index.html`.
+- Текст/секції/проєкти — у `index.html`.
 - Кольори/візуальний стиль — у `styles.css`.
 

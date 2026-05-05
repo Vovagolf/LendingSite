@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="uk">
+<html lang="uk" data-lang="uk">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Лендінг про Volkswagen Golf 5 (Mk5): комплектації, двигуни, розгін 0–100, характеристики та фото різних версій."
+      content="Портфоліо Бабійчук Володимир Миколайович — Backend Developer. Навички, проєкти, освіта та контакти."
+      data-i18n-meta="description"
     />
     <meta name="theme-color" content="#0b1020" />
-    <title>Volkswagen Golf 5 (Mk5) — комплектації та характеристики</title>
+    <title data-i18n-title>Портфоліо — Бабійчук Володимир Миколайович</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,32 +21,36 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Перейти до контенту</a>
+    <a class="skip-link" href="#main" data-en="Skip to content">Перейти до контенту</a>
 
     <header class="site-header" data-header>
       <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="На початок">
-          <span class="brand-mark" aria-hidden="true">V</span>
-          <span class="brand-text">Golf V</span>
+        <a class="brand" href="#top" aria-label="На початок" data-en-aria-label="Back to top">
+          <span class="brand-mark" aria-hidden="true">BV</span>
+          <span class="brand-text" data-en="Portfolio">Портфоліо</span>
         </a>
 
         <nav class="nav" aria-label="Головна навігація" data-nav>
-          <a class="nav-link" href="#gallery">Фото</a>
-          <a class="nav-link" href="#services">Комплектації</a>
-          <a class="nav-link" href="#benefits">Характеристики</a>
-          <a class="nav-link" href="#architecture">Техдані</a>
-          <a class="nav-link" href="#pricing">Двигуни &amp; розгін</a>
-          <a class="nav-link" href="#faq">FAQ</a>
-          <a class="nav-link" href="#contact">Контакти</a>
+          <a class="nav-link" href="#about" data-en="About">Про мене</a>
+          <a class="nav-link" href="#skills" data-en="Skills">Навички</a>
+          <a class="nav-link" href="#certificates" data-en="Certificates">Сертифікати</a>
+          <a class="nav-link" href="#experience" data-en="Experience">Досвід</a>
+          <a class="nav-link" href="#projects" data-en="Projects">Проєкти</a>
+          <a class="nav-link" href="#education" data-en="Education">Освіта</a>
+          <a class="nav-link" href="#contact" data-en="Contact">Контакти</a>
         </nav>
 
         <div class="header-actions">
-          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Перемкнути тему">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Перемкнути тему" data-en-aria-label="Toggle theme">
             <span class="theme-toggle-icon" aria-hidden="true"></span>
-            <span class="theme-toggle-text">Тема</span>
+            <span class="theme-toggle-text" data-en="Theme">ТЕМА</span>
+            <span class="theme-toggle-sub" data-theme-name aria-hidden="true">Midnight</span>
           </button>
-          <a class="btn btn-primary" href="#contact">Зв’язатися</a>
-          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Відкрити меню" aria-expanded="false">
+          <button class="lang-toggle" type="button" data-lang-toggle aria-label="Перемкнути мову" data-en-aria-label="Toggle language">
+            <span class="lang-pill" aria-hidden="true">UA</span>
+          </button>
+          <a class="btn btn-primary" href="#contact" data-en="Message me">Написати</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Відкрити меню" aria-expanded="false" data-en-aria-label="Open menu">
             <span class="nav-toggle-bars" aria-hidden="true"></span>
           </button>
         </div>
@@ -56,321 +61,439 @@
       <section class="hero" id="top">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="badge">Volkswagen • Golf Mk5 • 2003–2009</p>
-            <h1>Volkswagen Golf 5: комплектації та характеристики</h1>
-            <p class="lead">
-              Зручна “шпаргалка” по Golf V: популярні комплектації, двигуни, коробки, розгін 0–100 та ключові цифри.
+            <p class="badge" data-en="Backend Developer • C# / SQL • API">Backend Developer • C# / SQL • API</p>
+            <h1 data-en="Volodymyr Babiychuk">Бабійчук Володимир Миколайович</h1>
+            <p
+              class="lead"
+              data-en="I build backend solutions: APIs, databases, integrations, and automation. I focus on clean code, reliability, and clear project structure."
+            >
+              Розробляю бекенд‑рішення: API, робота з базами даних, інтеграції та автоматизація. Орієнтуюсь на чистий код,
+              надійність і зрозумілу структуру проєкту.
             </p>
 
             <div class="hero-cta">
-              <a class="btn btn-primary" href="#services">Комплектації</a>
-              <a class="btn btn-ghost" href="#pricing">Двигуни та розгін</a>
+              <a class="btn btn-primary" href="#projects" data-en="View projects">Подивитись проєкти</a>
+              <a class="btn btn-ghost" href="#contact" data-en="Contact">Контакти</a>
             </div>
 
-            <dl class="hero-metrics" aria-label="Ключові метрики">
+            <dl class="hero-metrics" aria-label="Ключова інформація" data-en-aria-label="Quick facts">
               <div class="metric">
-                <dt>Кузов</dt>
-                <dd><span class="num">3/5</span> двері</dd>
+                <dt data-en="Focus">Напрям</dt>
+                <dd><span class="num">Backend</span> / API</dd>
               </div>
               <div class="metric">
-                <dt>Потужність</dt>
-                <dd><span class="num">75–250</span> к.с.</dd>
+                <dt data-en="Languages">Мови</dt>
+                <dd><span class="num">C#</span>, Python</dd>
               </div>
               <div class="metric">
-                <dt>0–100</dt>
-                <dd><span class="num">6.2–14+</span> с</dd>
+                <dt data-en="Data">Дані</dt>
+                <dd><span class="num">SQL</span></dd>
               </div>
             </dl>
           </div>
 
-          <div class="hero-card" aria-label="Візуальна картка">
+          <div class="hero-card" aria-label="Картка профілю" data-en-aria-label="Profile card">
             <div class="glass">
               <div class="glass-header">
                 <span class="dot dot-red" aria-hidden="true"></span>
                 <span class="dot dot-yellow" aria-hidden="true"></span>
                 <span class="dot dot-green" aria-hidden="true"></span>
-                <span class="glass-title">Коротко про Golf V</span>
+                <span class="glass-title" data-en="Profile">Профіль</span>
               </div>
               <div class="glass-body">
                 <div class="stat">
-                  <span class="stat-k">Платформа</span>
-                  <span class="stat-v">PQ35</span>
+                  <span class="stat-k" data-en="Role">Роль</span>
+                  <span class="stat-v">Backend Developer</span>
                 </div>
                 <div class="stat">
-                  <span class="stat-k">Привід</span>
-                  <span class="stat-v">FWD / 4Motion</span>
+                  <span class="stat-k" data-en="Stack">Стек</span>
+                  <span class="stat-v">C#, SQL, Git</span>
                 </div>
                 <div class="stat">
-                  <span class="stat-k">КПП</span>
-                  <span class="stat-v">MT / AT / DSG</span>
+                  <span class="stat-k" data-en="Contact">Контакт</span>
+                  <span class="stat-v" data-en="Email / phone">Email / телефон</span>
                 </div>
 
                 <div class="spark" aria-hidden="true"></div>
                 <div class="chips" aria-hidden="true">
-                  <span class="chip">Trendline</span>
-                  <span class="chip">Comfortline</span>
-                  <span class="chip">GTI</span>
-                  <span class="chip">R32</span>
+                  <span class="chip">REST API</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">Git</span>
+                  <span class="chip">Automation</span>
                 </div>
               </div>
             </div>
 
-            <p class="hero-note">
-              Дані орієнтовні та залежать від двигуна/КПП/року/стану авто.
+            <p class="hero-note" data-en="Open to teamwork, internships, and real-world practice.">
+              Відкритий до командних проєктів, стажування та практики.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="gallery">
+      <section class="section" id="about">
         <div class="container">
           <div class="section-head">
-            <h2>Фото різних версій</h2>
-            <p>Приклади Golf V у різних виконаннях. Джерело фото — Wikimedia Commons.</p>
-          </div>
-
-          <div class="grid gallery">
-            <figure class="shot">
-              <img
-                loading="lazy"
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3e/2006_Volkswagen_Golf_%281K%29_Trendline_1.6_5-door_hatchback_%282010-06-10%29.jpg"
-                alt="Volkswagen Golf V Trendline 1.6, 5-дверний хетчбек"
-              />
-              <figcaption>Trendline (приклад базової комплектації)</figcaption>
-            </figure>
-            <figure class="shot">
-              <img
-                loading="lazy"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/77/2005_Volkswagen_Golf_%281K%29_Comfortline_2.0_FSI_5-door_hatchback_%282015-07-09%29_01.jpg"
-                alt="Volkswagen Golf V Comfortline 2.0 FSI, 5-дверний хетчбек"
-              />
-              <figcaption>Comfortline (золота середина)</figcaption>
-            </figure>
-            <figure class="shot">
-              <img
-                loading="lazy"
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5d/2005_Volkswagen_Golf_GTi_2.0_Front.jpg"
-                alt="Volkswagen Golf V GTI 2.0, вигляд спереду"
-              />
-              <figcaption>GTI (2.0 TFSI)</figcaption>
-            </figure>
-            <figure class="shot">
-              <img
-                loading="lazy"
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d4/VW_Golf_V_R32_front_20071108.jpg"
-                alt="Volkswagen Golf V R32, вигляд спереду"
-              />
-              <figcaption>R32 (3.2 VR6 + 4Motion)</figcaption>
-            </figure>
-          </div>
-
-          <p class="muted small">Фото: Wikimedia Commons (ліцензії — на сторінках файлів).</p>
-        </div>
-      </section>
-
-      <section class="section" id="services">
-        <div class="container">
-          <div class="section-head">
-            <h2>Комплектації (орієнтири)</h2>
-            <p>Назви та опції відрізнялись по країнах/роках. Нижче — типова логіка Golf V.</p>
-          </div>
-
-          <div class="grid cards">
-            <article class="card">
-              <h3>Trendline</h3>
-              <p>База: практичність, прості опції, часто найкраща ціна на вторинному ринку.</p>
-              <ul class="list">
-                <li>Тканинний салон</li>
-                <li>Кондиціонер (інколи опція)</li>
-                <li>Базова акустика</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Comfortline</h3>
-              <p>“Золота середина”: більше комфорту та опцій для щоденного використання.</p>
-              <ul class="list">
-                <li>Клімат/кондиціонер</li>
-                <li>Круїз (залежить від версії)</li>
-                <li>Кращі матеріали салону</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Highline / Sportline</h3>
-              <p>Більше оснащення та “вигляду”: оптика/диски/інтер’єр.</p>
-              <ul class="list">
-                <li>Кращі сидіння</li>
-                <li>Декор/кермо/опції</li>
-                <li>Більші диски</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>GT / GTI</h3>
-              <p>Спортивні версії: жорсткіша підвіска, гальма, виразний вигляд.</p>
-              <ul class="list">
-                <li>GTI: 2.0 TFSI (≈200 к.с.)</li>
-                <li>MT або DSG</li>
-                <li>0–100 ~6.9 с</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>R32</h3>
-              <p>Топ‑версія Mk5: VR6, повний привід 4Motion, рідкісна й харизматична.</p>
-              <ul class="list">
-                <li>3.2 VR6 (≈250 к.с.)</li>
-                <li>4Motion</li>
-                <li>0–100 ≈ 6.2 с</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Variant / Plus</h3>
-              <p>Практичні кузови: більше місця для сім’ї, поїздок та багажу.</p>
-              <ul class="list">
-                <li>Більший багажник</li>
-                <li>Зручніший салон</li>
-                <li>Ті самі двигуни</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="benefits">
-        <div class="container">
-          <div class="section-head">
-            <h2>Ключові характеристики</h2>
-            <p>Коротко про те, що зазвичай важливо при виборі Golf V.</p>
+            <h2 data-en="About me">Про мене</h2>
+            <p>
+              <span
+                data-en-html="I’m <strong>Volodymyr Babiychuk</strong>. I’m growing as a backend developer and working with databases, APIs, and development tools."
+              >
+                Я — <strong>Бабійчук Володимир Миколайович</strong>. Розвиваюсь у напрямку бекенду та працюю з базами даних,
+                API й інструментами розробки.
+              </span>
+            </p>
           </div>
 
           <div class="grid benefits">
             <div class="benefit">
-              <h3>Габарити</h3>
-              <p>Довжина ≈ 4.20 м, ширина ≈ 1.76 м. Зручний формат для міста та траси.</p>
+              <h3 data-en="What I do">Що роблю</h3>
+              <p data-en="Server-side logic, REST APIs, CRUD, integrations, data work.">
+                Серверна логіка, REST API, CRUD, інтеграції, робота з даними.
+              </p>
             </div>
             <div class="benefit">
-              <h3>Двигуни</h3>
-              <p>Бензин MPI/FSI/TFSI та дизель TDI. Реальний вибір під бюджет і стиль їзди.</p>
+              <h3 data-en="What I value">Що важливо</h3>
+              <p data-en="Clear architecture, correctness, readability, version control.">
+                Зрозуміла архітектура, коректність, читабельність, контроль версій.
+              </p>
             </div>
             <div class="benefit">
-              <h3>Коробки</h3>
-              <p>Механіка, автомат (залежно від ринку) та DSG на окремих моторах.</p>
+              <h3 data-en="What I’m learning">Що вивчаю</h3>
+              <p data-en="Deepening C#/.NET, SQL, engineering practices, and teamwork.">
+                Поглиблення в C#/.NET, SQL, практики розробки та командної роботи.
+              </p>
             </div>
             <div class="benefit">
-              <h3>Привід</h3>
-              <p>Переважно передній. Для R32 — 4Motion (повний привід).</p>
+              <h3 data-en="Goal">Ціль</h3>
+              <p data-en="Build a strong portfolio with real projects and tasks.">
+                Наповнити портфоліо реальними проєктами та задачами.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="architecture">
+      <section class="section section-alt" id="skills">
         <div class="container">
           <div class="section-head">
-            <h2>Технічна довідка</h2>
-            <p>Коротка “пам’ятка” по Golf V: платформа, кузови та базові вузли.</p>
+            <h2 data-en="Skills">Навички</h2>
+            <p data-en="My current stack and tools.">Мій поточний стек та інструменти.</p>
           </div>
 
-          <div class="diagram" role="img" aria-label="Короткі техдані Golf V">
-            <div class="diagram-row">
-              <div class="node node-accent">Платформа: PQ35</div>
-              <div class="node">Роки: 2003–2009</div>
-              <div class="node">Кузови: 3/5dr, Variant, Plus</div>
-            </div>
-            <div class="diagram-row">
-              <div class="node node-strong">Підвіска</div>
-              <div class="node">Перед: McPherson</div>
-              <div class="node">Зад: багатоважільна</div>
-            </div>
-            <div class="diagram-row">
-              <div class="node">Паливо: бензин/дизель</div>
-              <div class="node">КПП: MT/AT/DSG</div>
-              <div class="node node-accent">Привід: FWD / 4Motion</div>
-            </div>
+          <div class="grid cards">
+            <article class="card">
+              <h3>Backend (.NET / Python)</h3>
+              <p class="muted" data-en="APIs, server-side logic, integrations.">API, серверна логіка, інтеграції.</p>
+              <ul class="list">
+                <li>C# (ASP.NET)</li>
+                <li>REST API</li>
+                <li>Authorization</li>
+                <li>Python (Flask)</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3 data-en="Databases (PostgreSQL)">Бази даних (PostgreSQL)</h3>
+              <p class="muted" data-en="Queries, performance, migrations.">Запити, продуктивність, міграції.</p>
+              <ul class="list">
+                <li>JOIN / Aggregations</li>
+                <li>Indexes</li>
+                <li>Transactions</li>
+                <li>Alembic migrations</li>
+                <li>pgvector</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3 data-en="Tools & workflow">Інструменти та процес</h3>
+              <p class="muted" data-en="Development, deployment, teamwork.">Розробка, деплой, командна робота.</p>
+              <ul class="list">
+                <li>Git (PR/branches)</li>
+                <li>Docker</li>
+                <li>CI/CD</li>
+                <li>Jira</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Telegram</h3>
+              <p class="muted" data-en="Bots, admin modules, deployment.">Боти, адмін‑модулі, деплой.</p>
+              <ul class="list">
+                <li>Telegram bots</li>
+                <li>Admin module</li>
+                <li>Deploy module</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certificates">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-en="Certificates">Сертифікати</h2>
+            <p data-en="SoloLearn: proof of knowledge and practice.">SoloLearn: підтвердження знань і практики.</p>
           </div>
 
-          <div class="callout">
-            <p>
-              Хочете точні цифри під конкретний мотор (код двигуна), КПП та рік? Додайте їх у повідомленні — і зробимо
-              детальніший розбір.
+          <div class="grid gallery">
+            <figure class="shot shot--cert">
+              <img
+                loading="lazy"
+                src="https://api2.sololearn.com/v2/certificates/CT-88OP7MKW/image/png?t=639135691073981700"
+                alt="Сертифікат SoloLearn: C#"
+              />
+              <figcaption data-en="C# (SoloLearn)">C# (SoloLearn)</figcaption>
+            </figure>
+            <figure class="shot shot--cert">
+              <img
+                loading="lazy"
+                src="https://api2.sololearn.com/v2/certificates/CT-TNQQGZVF/image/png?t=639135692471554216"
+                alt="Сертифікат SoloLearn: JavaScript"
+              />
+              <figcaption data-en="JavaScript (SoloLearn)">JavaScript (SoloLearn)</figcaption>
+            </figure>
+            <figure class="shot shot--cert">
+              <img
+                loading="lazy"
+                src="https://api2.sololearn.com/v2/certificates/CT-GFR5HKUE/image/png?t=639135692837042595"
+                alt="Сертифікат SoloLearn: SQL"
+              />
+              <figcaption data-en="SQL (SoloLearn)">SQL (SoloLearn)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-en="Experience">Досвід</h2>
+            <p data-en="A short summary of tasks and repositories I worked with (public and private).">
+              Коротко про задачі та репозиторії, з якими працював (публічні та приватні).
             </p>
           </div>
+
+          <div class="grid cards">
+            <article class="card">
+              <h3 data-en="Data Science ua — Bonard (starting)">Data Science ua — Bonard (початок роботи)</h3>
+              <p
+                class="muted"
+                data-en="Project onboarding: getting familiar with the codebase, tasks, and processes."
+              >
+                Старт участі в проєкті: знайомство з кодовою базою, задачами та процесами.
+              </p>
+              <ul class="list">
+                <li data-en="Status: in progress">Статус: in progress</li>
+                <li data-en="Focus: onboarding, environment setup, starting tasks">
+                  Фокус: ознайомлення, підготовка середовища, вхід у задачі
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-en="PharmaceuticalsSpeaker (private, C#) — internship 16.02–06.03.2026">
+                PharmaceuticalsSpeaker (приватний, C#) — практика 16.02–06.03.2026
+              </h3>
+              <p
+                class="muted"
+                data-en="Team development: admin panel, chat features, authorization, and metrics."
+              >
+                Командна розробка: адмін‑панель, чат‑функції, авторизація, метрики.
+              </p>
+              <ul class="list">
+                <li data-en="Set up the environment: Visual Studio 2026, Python 3.11.9, PostgreSQL 16, pgvector">
+                  Налаштував середовище: Visual Studio 2026, Python 3.11.9, PostgreSQL 16, pgvector
+                </li>
+                <li data-en="Analyzed the system architecture and components (backend/client); worked with Jira">
+                  Розібрав архітектуру системи та компоненти (бекенд/клієнт), робота з Jira
+                </li>
+                <li data-en="UI/UX: changed the chat send button to “Speak”">
+                  UI/UX фіча: зміна кнопки відправки повідомлення на “Сказати” у чаті
+                </li>
+                <li data-en="Added an “Admin panel” button on the homepage">Додав кнопку “Адмін кабінет” на головну сторінку</li>
+                <li data-en="Implemented admin pages authorization (Microsoft.AspNetCore.Authorization)">
+                  Авторизація для адмін‑сторінок (Microsoft.AspNetCore.Authorization)
+                </li>
+                <li data-en="Latency metrics: `Farma.Mcp.Server` + `Farma.Blazor.UI`">
+                  Метрики latency: сервер `Farma.Mcp.Server` + клієнт `Farma.Blazor.UI`
+                </li>
+                <li data-en="Tested the chat system and verified work scenarios">
+                  Тестування чат‑системи та перевірка сценаріїв роботи
+                </li>
+                <li data-en="Admin UI: dialog state management + CRUD operations for states">
+                  Адмін UI: керування станами діалогу + CRUD‑операції для станів
+                </li>
+                <li data-en="Added email list editing via Admin UI">Додав редагування списку email через Admin UI</li>
+                <li data-en="Fixed styles and aligned admin panel UI elements">
+                  Правки стилів і вирівнювання елементів адмін‑панелі
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-en="SFUA (private, Python)">SFUA (приватний, Python)</h3>
+              <p class="muted">
+                <span
+                  data-en="API/integration modules and Telegram bots: PostgreSQL, Alembic migrations, logging/observability, and service deployment."
+                >
+                  Проєкт з модулями API/інтеграцій та телеграм‑ботами: PostgreSQL, міграції (Alembic), логування/спостережуваність,
+                  деплой сервісів.
+                </span>
+              </p>
+              <ul class="list">
+                <li data-en="PostgreSQL: schema and queries">PostgreSQL: робота зі структурою та запитами</li>
+                <li data-en="Alembic: DB migrations and schema change control">Alembic: міграції БД та контроль змін схеми</li>
+                <li data-en="Logging/observability: collecting and analyzing logs; scenario verification">
+                  Logging/observability: збір і аналіз логів, перевірка сценаріїв
+                </li>
+                <li data-en="Telegram deployment: `telegram_deploy_module` (deploy bot/service)">
+                  Telegram deployment: `telegram_deploy_module` (deploy bot/service)
+                </li>
+                <li data-en="Maintained Telegram bots and integration modules">Підтримка телеграм‑ботів та інтеграційних модулів</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-en="GitHub profile">GitHub профіль</h3>
+              <p class="muted" data-en="My public repositories and activity.">Мої публічні репозиторії та активність.</p>
+              <ul class="list">
+                <li data-en-html="Profile: <a href=&quot;https://github.com/Vovagolf&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot;>github.com/Vovagolf</a>">
+                  Профіль: <a href="https://github.com/Vovagolf" target="_blank" rel="noreferrer">github.com/Vovagolf</a>
+                </li>
+                <li data-en="Public repositories: 12">Публічних репозиторіїв: 12</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="pricing">
+      <section class="section" id="projects">
         <div class="container">
           <div class="section-head">
-            <h2>Двигуни та розгін (0–100 км/год)</h2>
-            <p>Орієнтовні значення для популярних версій Golf V. Реальні цифри залежать від КПП та стану авто.</p>
+            <h2 data-en="Projects">Проєкти</h2>
+            <p data-en="Public GitHub repositories + examples of learning projects.">
+              Публічні репозиторії з GitHub + приклади навчальних робіт.
+            </p>
           </div>
 
-          <div class="grid pricing">
-            <article class="price-card">
-              <h3>1.6 MPI</h3>
-              <p class="price"><span class="price-num">0–100</span> ~11.5с</p>
-              <p class="muted">Простий атмосферник (часто 102 к.с.)</p>
+          <div class="grid cards">
+            <article class="card">
+              <h3>Converter_temperatur-X</h3>
+              <p class="muted" data-en="Web app for temperature conversion (°C ↔ °F).">
+                Веб‑програма для конвертації температури (°C ↔ °F).
+              </p>
               <ul class="list">
-                <li>Плавна міська їзда</li>
-                <li>Невибагливий сервіс</li>
-                <li>Хороший варіант “на кожен день”</li>
+                <li data-en="Stack: HTML">Стек: HTML</li>
+                <li>
+                  <span data-en="GitHub:">GitHub:</span>
+                  <a href="https://github.com/Vovagolf/Converter_temperatur-X" target="_blank" rel="noreferrer">
+                    Converter_temperatur-X
+                  </a>
+                </li>
               </ul>
-              <a class="btn btn-ghost" href="#contact" data-plan="1.6 MPI">Запитати</a>
             </article>
-            <article class="price-card featured">
-              <p class="tag">Популярний</p>
-              <h3>2.0 TDI</h3>
-              <p class="price"><span class="price-num">0–100</span> ~9.5с</p>
-              <p class="muted">Тяговитий дизель (часто 140 к.с.)</p>
+            <article class="card">
+              <h3>Console_MyLibrary</h3>
+              <p class="muted" data-en="Console app (learning OOP/data structures practice).">
+                Консольний застосунок (навчальна практика ООП/структур даних).
+              </p>
               <ul class="list">
-                <li>Комфорт на трасі</li>
-                <li>Економічність</li>
-                <li>MT/DSG залежно від версії</li>
+                <li data-en="Stack: C#">Стек: C#</li>
+                <li>
+                  <span data-en="GitHub:">GitHub:</span>
+                  <a href="https://github.com/Vovagolf/Console_MyLibrary" target="_blank" rel="noreferrer">
+                    Console_MyLibrary
+                  </a>
+                </li>
               </ul>
-              <a class="btn btn-primary" href="#contact" data-plan="2.0 TDI">Запитати</a>
             </article>
-            <article class="price-card">
-              <h3>GTI 2.0 TFSI</h3>
-              <p class="price"><span class="price-num">0–100</span> ~6.9с</p>
-              <p class="muted">Гарячий хетч (≈200 к.с.)</p>
+            <article class="card">
+              <h3>My-Calkulyator</h3>
+              <p class="muted" data-en="C# learning project (logic/input handling/structure).">
+                Навчальний проєкт на C# (логіка/обробка введення/структура).
+              </p>
               <ul class="list">
-                <li>Динаміка та керованість</li>
-                <li>MT/DSG</li>
-                <li>Впізнаваний стиль GTI</li>
+                <li data-en="Stack: C#">Стек: C#</li>
+                <li>
+                  <span data-en="GitHub:">GitHub:</span>
+                  <a href="https://github.com/Vovagolf/My-Calkulyator" target="_blank" rel="noreferrer">
+                    My-Calkulyator
+                  </a>
+                </li>
               </ul>
-              <a class="btn btn-ghost" href="#contact" data-plan="GTI 2.0 TFSI">Запитати</a>
+            </article>
+
+            <article class="card">
+              <h3>LendingSite</h3>
+              <p class="muted" data-en="Static website/landing (HTML/CSS/JS), deployed to GitHub Pages.">
+                Статичний сайт/лендінг (HTML/CSS/JS), розгортання на GitHub Pages.
+              </p>
+              <ul class="list">
+                <li data-en="Stack: HTML/CSS/JS">Стек: HTML/CSS/JS</li>
+                <li>
+                  <span data-en="GitHub:">GitHub:</span>
+                  <a href="https://github.com/Vovagolf/LendingSite" target="_blank" rel="noreferrer">LendingSite</a>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>ConsoleShoppingList</h3>
+              <p class="muted" data-en="Console app: practice of basic logic and project structure.">
+                Консольний застосунок: практика базової логіки та структури проєкту.
+              </p>
+              <ul class="list">
+                <li data-en="Stack: C#">Стек: C#</li>
+                <li>
+                  <span data-en="GitHub:">GitHub:</span>
+                  <a href="https://github.com/Vovagolf/ConsoleShoppingList" target="_blank" rel="noreferrer">
+                    ConsoleShoppingList
+                  </a>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>UGI</h3>
+              <p class="muted" data-en="Python repository (fork): learning practice/experiments.">
+                Python‑репозиторій (форк): навчальна практика/експерименти.
+              </p>
+              <ul class="list">
+                <li data-en="Stack: Python">Стек: Python</li>
+                <li>
+                  <span data-en="GitHub:">GitHub:</span>
+                  <a href="https://github.com/Vovagolf/UGI" target="_blank" rel="noreferrer">UGI</a>
+                </li>
+              </ul>
             </article>
           </div>
-
-          <p class="pricing-note muted">
-            Часті варіанти ще: 1.9 TDI (~10.5с), 2.0 FSI (~9.8с), R32 (~6.2с). Точні значення залежать від конфігурації.
-          </p>
         </div>
       </section>
 
-      <section class="section" id="faq">
+      <section class="section section-alt" id="education">
         <div class="container">
           <div class="section-head">
-            <h2>FAQ</h2>
-            <p>Короткі відповіді про Golf V.</p>
+            <h2 data-en="Education">Освіта</h2>
+            <p data-en="Education and academic track.">Навчальний шлях та напрям.</p>
           </div>
 
-          <div class="faq">
-            <details>
-              <summary>Яку комплектацію краще шукати?</summary>
-              <p>Часто радять Comfortline як “золоту середину”. Highline — більше опцій, Trendline — бюджетно.</p>
-            </details>
-            <details>
-              <summary>GTI vs R32 — що обрати?</summary>
-              <p>GTI зазвичай дешевший в утриманні та легший, R32 — VR6 + 4Motion і “особлива” версія для фанатів.</p>
-            </details>
-            <details>
-              <summary>Чи однаковий розгін у всіх 2.0 TDI?</summary>
-              <p>Ні: різні турбіни/прошивки/КПП/маса. Тут наведені середні орієнтири.</p>
-            </details>
-            <details>
-              <summary>Можна додати більше комплектацій і моторів?</summary>
-              <p>Так. Можемо зробити таблицю всіх моторів (MPI/FSI/TFSI/TDI), кодів і типових болячок під ваш ринок.</p>
-            </details>
+          <div class="grid cards">
+            <article class="card">
+              <h3 data-en="NAU “Irpin Economic College”">НАУ “Ірпінський економічний коледж”</h3>
+              <p class="muted" data-en="Merchandising and entrepreneurship">Товарознавство та підприємницька діяльність</p>
+              <ul class="list">
+                <li data-en="Degree: Bachelor of Trade (higher education)">Ступінь: бакалавр з торгівлі (вища)</li>
+                <li data-en="Year: 2010">Рік: 2010</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3 data-en="Ukrainian Humanitarian Institute">Український гуманітарний інститут</h3>
+              <p class="muted" data-en="Computer Science">Комп’ютерні науки</p>
+              <ul class="list">
+                <li data-en="Status: 3rd-year student">Статус: студент 3 курсу</li>
+              </ul>
+            </article>
           </div>
+
+          
         </div>
       </section>
 
@@ -378,14 +501,12 @@
         <div class="container contact-grid">
           <div>
             <div class="section-head left">
-              <h2>Зв’язатися</h2>
-              <p>
-                Звертатися до <strong>Бабійчука Володимира</strong>, група <strong>КН23</strong>.
-              </p>
+              <h2 data-en="Contact">Контакти</h2>
+              <p data-en="Reach out via email or phone.">Зв’яжіться зі мною зручним способом.</p>
             </div>
 
             <div class="contact-cards">
-              <a class="contact-card" href="mailto:hello@example.com">
+              <a class="contact-card" href="mailto:golf5oskar@gmail.com">
                 <span class="contact-icon" aria-hidden="true">
                   <svg class="icon icon-lg" viewBox="0 0 24 24">
                     <path
@@ -396,7 +517,7 @@
                 </span>
                 <span class="contact-text">
                   <span class="contact-k">Email</span>
-                  <span class="contact-v">hello@example.com</span>
+                  <span class="contact-v">golf5oskar@gmail.com</span>
                 </span>
                 <span class="contact-arrow" aria-hidden="true">
                   <svg class="icon" viewBox="0 0 24 24">
@@ -404,7 +525,8 @@
                   </svg>
                 </span>
               </a>
-              <a class="contact-card" href="tel:+380000000000">
+
+              <a class="contact-card" href="tel:+380672491576">
                 <span class="contact-icon" aria-hidden="true">
                   <svg class="icon icon-lg" viewBox="0 0 24 24">
                     <path
@@ -414,8 +536,8 @@
                   </svg>
                 </span>
                 <span class="contact-text">
-                  <span class="contact-k">Телефон</span>
-                  <span class="contact-v">+38 (000) 000‑00‑00</span>
+                  <span class="contact-k" data-en="Phone">Телефон</span>
+                  <span class="contact-v">+38 (067) 249‑15‑76</span>
                 </span>
                 <span class="contact-arrow" aria-hidden="true">
                   <svg class="icon" viewBox="0 0 24 24">
@@ -423,18 +545,19 @@
                   </svg>
                 </span>
               </a>
-              <a class="contact-card" href="https://t.me/" target="_blank" rel="noreferrer">
+
+              <a class="contact-card" href="#projects">
                 <span class="contact-icon" aria-hidden="true">
                   <svg class="icon icon-lg" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
-                      d="M20.7 4.1c.7-.3 1.4.3 1.2 1.1l-3 14.2c-.2 1-1.3 1.4-2.2.9l-4.7-2.9-2.3 2.2c-.5.5-1.4.2-1.4-.5l.1-3.2 9.6-8.7c.3-.3 0-.7-.4-.5L6.1 12.2 2.6 11c-.9-.3-.9-1.6 0-2l18.1-4.9Z"
+                      d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-5l-3 3-3-3H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm2 4h12v2H6V8Zm0 4h8v2H6v-2Z"
                     />
                   </svg>
                 </span>
                 <span class="contact-text">
-                  <span class="contact-k">Telegram</span>
-                  <span class="contact-v">@your_handle</span>
+                  <span class="contact-k" data-en="Projects">Проєкти</span>
+                  <span class="contact-v" data-en="View work">Перейти до робіт</span>
                 </span>
                 <span class="contact-arrow" aria-hidden="true">
                   <svg class="icon" viewBox="0 0 24 24">
@@ -447,27 +570,50 @@
 
           <form class="form" data-contact-form>
             <label>
-              <span>Ім’я</span>
-              <input name="name" autocomplete="name" required placeholder="Ваше ім’я" />
+              <span data-en="Name">Ім’я</span>
+              <input
+                name="name"
+                autocomplete="name"
+                required
+                placeholder="Ваше ім’я"
+                data-en-placeholder="Your name"
+              />
             </label>
             <label>
               <span>Email</span>
-              <input name="email" type="email" autocomplete="email" required placeholder="name@company.com" />
+              <input
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="ваш@email.com"
+                data-en-placeholder="you@email.com"
+              />
             </label>
             <label>
-              <span>Проєкт</span>
-              <input name="project" placeholder="Комплектація/мотор: Comfortline 1.9 TDI, GTI, R32..." />
+              <span data-en="Topic">Тема</span>
+              <input
+                name="project"
+                placeholder="API / SQL / інтеграція / навчальний проєкт..."
+                data-en-placeholder="API / SQL / integration / project..."
+              />
             </label>
             <label>
-              <span>Повідомлення</span>
-              <textarea name="message" rows="4" placeholder="Коротко опишіть задачу" required></textarea>
+              <span data-en="Message">Повідомлення</span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Коротко опишіть задачу"
+                data-en-placeholder="Briefly describe your request"
+                required
+              ></textarea>
             </label>
 
             <input type="hidden" name="plan" />
 
-            <button class="btn btn-primary" type="submit">Надіслати</button>
-            <p class="form-hint muted">
-              Форма відкриє ваш поштовий клієнт (без бекенду). За потреби підключимо справжню відправку через сервіс.
+            <button class="btn btn-primary" type="submit" data-en="Send">Надіслати</button>
+            <p class="form-hint muted" data-en="This form opens your email client (no backend).">
+              Форма відкриє ваш поштовий клієнт (без бекенду).
             </p>
           </form>
         </div>
@@ -476,10 +622,12 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <p class="muted">© <span data-year></span> Golf V landing. Зроблено для GitHub Pages.</p>
+        <p class="muted" data-en="© <span data-year></span> Volodymyr Babiychuk. Portfolio.">
+          © <span data-year></span> Бабійчук Володимир Миколайович. Портфоліо.
+        </p>
         <div class="footer-links">
-          <a class="muted" href="#top">Вгору</a>
-          <a class="muted" href="#privacy">Політика</a>
+          <a class="muted" href="#top" data-en="Top">Вгору</a>
+          <a class="muted" href="#privacy" data-en="Privacy">Політика</a>
         </div>
       </div>
     </footer>
@@ -488,11 +636,22 @@
       <div class="dialog-inner">
         <form method="dialog">
           <div class="dialog-head">
-            <h2>Політика конфіденційності (шаблон)</h2>
-            <button class="btn btn-ghost" value="close" aria-label="Закрити">Закрити</button>
+            <h2 data-en="Privacy policy (template)">Політика конфіденційності (шаблон)</h2>
+            <button
+              class="btn btn-ghost"
+              value="close"
+              aria-label="Закрити"
+              data-en-aria-label="Close"
+              data-en="Close"
+            >
+              Закрити
+            </button>
           </div>
-          <p class="muted">
-            Це демонстраційний текст. Додайте свою політику (зокрема про cookies, аналітику та обробку персональних даних).
+          <p
+            class="muted"
+            data-en="This is placeholder text. Add your own policy (personal data processing and contact form usage)."
+          >
+            Це демонстраційний текст. Додайте свою політику (про обробку персональних даних та використання контактної форми).
           </p>
         </form>
       </div>
@@ -501,4 +660,3 @@
     <script src="./script.js" defer></script>
   </body>
 </html>
-
